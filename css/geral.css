@@ -1,0 +1,15 @@
+@import './buscador.css';
+@import './box.css';
+body{
+  background: #567979;
+}
+
+.resultadoCep {
+  display: block;
+  text-align: center;
+}
+
+p{
+  font-weight: bold;
+  font-size: 1.5rem;
+}

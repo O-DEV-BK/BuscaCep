@@ -1,0 +1,29 @@
+.box {
+  display: none;
+}
+
+.box.ativo {
+  display: block;
+  padding: 10px;
+  margin-left: 540px;
+  width: 40ch;
+  height: 50ch;
+  border-radius: 7px;
+  background-color: rgb(54, 168, 202);
+  border: 10px linear;
+  animation-name: moveUpDown;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes moveUpDown {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
