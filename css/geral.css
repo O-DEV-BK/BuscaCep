@@ -1,15 +1,27 @@
-@import './buscador.css';
 @import './box.css';
-body{
-  background: #567979;
+@import './buscador.css';
+@import './resultadoCep.css';
+
+:root {
+--cor-purpura-50: #7c3aed;
+--cor-purpura-100: #a855f7;
+--cor-purpura-200: #bf46ef;
+
+--gradiente: linear-gradient(90deg, var(--cor-purpura-50), var(--cor-purpura-100), var(--cor-purpura-200));
 }
 
-.resultadoCep {
-  display: block;
-  text-align: center;
+
+
+body {
+  background: var(--gradiente) ;
 }
 
-p{
+p {
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+ul, li{
+list-style: none;
 }

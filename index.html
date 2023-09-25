@@ -4,34 +4,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>busca Cep</title>
   <link rel="stylesheet" href="./css/geral.css">
 </head>
 
 <body>
-  <form id="buscaCep">
-    <h1 class="h1cep">Cep</h1>
-    <input type="text" name="cep" id="cep" placeholder="Insira o cep desejado">
-    <input type="button" value="buscar" id="btnCep">
-  </form>
+    <form id="buscaCep">
+      <h1 class="h1cep">Cep</h1>
+      <input type="text" name="cep" id="cep" placeholder="Insira o cep desejado">
+      <button id="btnCep">Buscar</button>
+    </form>
 
-  <div class="box">
-    <div class="resultadoCep">
-      <div>
-        <h1>Rua</h1>
+
+
+  <section class="resultadoCep">
+    <ul class="box">
+      <li>
+        <h1>Rua:</h1>
         <p id="logradouro"></p>
-      </div>
-      <div>
-        <h1>Bairro:</h1>
+      </li>
+      <li>
+        <h1>logradouro:</h1>
         <p id="bairro"></p>
-      </div>
-      <div>
+      </li>
+      <li>
         <h1>Cidade:</h1>
         <p id="localidade"></p>
-      </div>
-    </div>
+      </li>
+    </ul>
+  </section>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

@@ -5,18 +5,18 @@ const bairro = document.getElementById('bairro');
 const logradouro = document.getElementById('logradouro');
 const cidade = document.getElementById('localidade');
 const UF = document.getElementById('uf');
-const box = document.querySelector('.box')
-const cep = inputCep.value;
+const box = document.querySelector('.box');
+
 
 
 
 btnCep.addEventListener('click', handleClick);
 btnCep.addEventListener('click', ativar);
-btnCep.addEventListener('click', reload);
 
 function handleClick(event) {
   event.preventDefault();
-  buscaCep(cep)
+  const cep = inputCep.value;
+  buscaCep(cep);
 }
 
 function buscaCep(cep) {
@@ -31,36 +31,12 @@ function buscaCep(cep) {
 
 
 function ativar() {
-  // if (box.classList.contains('ativo')) {
-  //   box.classList.remove('ativo')
-  // } else {
-  //   box.classList.add('ativo')
-  // }
+  // buscaCep(cep);
   box.classList.add('ativo');
 };
 
 
-// // $(document).ready(function() {
-// //   const btnReload = $('#btnReload');
-// //   const contentDiv = $('#content');
 
-// function reload() { 
-// // Faz uma solicitação AJAX para obter o novo conteúdo
-// // fetch(`http://127.0.0.1:5500/index.html?cep=${cep}`)
-// .then(response => response())
-// .then(body =>{
-//   box.innerHTML = body;
-//   console.log('ola')
-
-// })
-// }
-// url: 'novopconteudo.html', // Substitua pelo seu URL ou caminho
-//   success: function(data) {
-//     contentDiv.html(data); // Atualiza o conteúdo da div
-//   },
-// error: function() {
-//   console.log('Erro ao carregar novo conteúdo.');
-// }
 
 
 
